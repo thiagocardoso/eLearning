@@ -9,10 +9,10 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: eLearning_development
+  database: eLearning
   pool: 5
   username: root
-  password:
+  password: '123456'
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -25,15 +25,15 @@ test:
   database: eLearning_test
   pool: 5
   username: root
-  password:
+  password: '123456'
   host: localhost
 
 production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: eLearning_production
+  database: eLearning
   pool: 5
   username: root
-  password:
+  password: '123456'
   host: localhost
