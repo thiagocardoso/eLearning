@@ -9,10 +9,14 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: eLearning_development
+  database: eLearning_dev 
   pool: 5
   username: root
+<<<<<<< HEAD:config/database.yml
   password: adm
+=======
+  password: 
+>>>>>>> 518c1beffb023207f44abed885aa1541041a74aa:backups/database.yml
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -25,15 +29,23 @@ test:
   database: eLearning_test
   pool: 5
   username: root
+<<<<<<< HEAD:config/database.yml
   password: adm
+=======
+  password: 
+>>>>>>> 518c1beffb023207f44abed885aa1541041a74aa:backups/database.yml
   host: localhost
 
 production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: eLearning_production
+  database: eLearning
   pool: 5
   username: root
+<<<<<<< HEAD:config/database.yml
   password: adm
+=======
+  password: 
+>>>>>>> 518c1beffb023207f44abed885aa1541041a74aa:backups/database.yml
   host: localhost
