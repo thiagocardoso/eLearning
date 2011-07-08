@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>SEK - Sistema</title>
+		<%= javascript_include_tag :all %>
+		<%= stylesheet_link_tag :all %>
+		<%= yield :head %>
+	</head>
+	<body>
+		<div id="corpo">
+			<div id="cabecalho" class="teste">
+				<a href="#">Inicio</a>
+				<a href="#">Disciplinas</a>
+				<a href="#">Avaliacoes</a>
+			</div>
+			<br />
+			<%= yield %>
+			<div id="rodape">
+				SEK Sistemas 2011 - Todos os direitos reservados
+				
+			</div>
+		</div>	
+	</body>
+</html>
