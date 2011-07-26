@@ -9,13 +9,68 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110707234104) do
+ActiveRecord::Schema.define(:version => 20110726011825) do
+
+  create_table "atividades", :force => true do |t|
+    t.string   "titulo"
+    t.text     "descricao"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "avaliacaos", :force => true do |t|
+    t.string   "titulo"
+    t.text     "descricao"
+    t.integer  "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "disciplinas", :force => true do |t|
+    t.string   "nome"
+    t.string   "descricao"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "materials", :force => true do |t|
+    t.string   "titulo"
+    t.text     "corpo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "perfils", :force => true do |t|
+    t.string   "descricao"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "programas", :force => true do |t|
+    t.string   "nome"
+    t.integer  "carga_horaria"
+    t.integer  "periodicidade"
+    t.integer  "ano_implantacao"
+    t.string   "ementa"
+    t.text     "objetivos"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "questaos", :force => true do |t|
+    t.string   "nome"
+    t.text     "descricao"
+    t.text     "corpo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "usuarios", :force => true do |t|
     t.string   "nome"
     t.string   "login"
     t.string   "senha"
     t.string   "email"
+    t.integer  "perfil_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
