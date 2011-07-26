@@ -3,7 +3,7 @@ class CreateAtividades < ActiveRecord::Migration
     create_table :atividades do |t|
       t.string :titulo
       t.text :descricao
-
+      t.references :programa
       t.timestamps
     end
   end

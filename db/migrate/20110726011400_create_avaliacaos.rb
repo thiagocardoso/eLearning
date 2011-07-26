@@ -4,7 +4,7 @@ class CreateAvaliacaos < ActiveRecord::Migration
       t.string :titulo
       t.text :descricao
       t.integer :status
-
+      t.references :atividade
       t.timestamps
     end
   end

@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(:version => 20110726011825) do
   create_table "atividades", :force => true do |t|
     t.string   "titulo"
     t.text     "descricao"
+    t.integer  "programa_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -22,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20110726011825) do
     t.string   "titulo"
     t.text     "descricao"
     t.integer  "status"
+    t.integer  "atividade_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -53,6 +55,7 @@ ActiveRecord::Schema.define(:version => 20110726011825) do
     t.integer  "ano_implantacao"
     t.string   "ementa"
     t.text     "objetivos"
+    t.integer  "disciplina_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

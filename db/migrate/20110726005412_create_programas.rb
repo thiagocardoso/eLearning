@@ -7,7 +7,7 @@ class CreateProgramas < ActiveRecord::Migration
       t.integer :ano_implantacao
       t.string :ementa
       t.text :objetivos
-
+      t.references :disciplina
       t.timestamps
     end
   end
