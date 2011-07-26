@@ -1,17 +1,20 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :questaos
+  map.resources :usuarios  
 
-  map.resources :avaliacaos
+  map.resources :perfils, :as => 'perfis'
+
+  map.resources :questaos, :as => 'questoes' 
+  #map.resources 'questoes/', :controller => :questaos
+
+  map.resources :avaliacaos, :as => 'avaliacoes'
 
   map.resources :atividades
 
-  map.resources :materials
+  map.resources :materials, :as => 'materiais'
 
   map.resources :disciplinas
 
-  map.resources :programas
-
-  map.resources :perfils
+  map.resources :programas  
 
   map.resources :usuarios
 
