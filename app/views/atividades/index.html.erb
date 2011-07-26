@@ -1,0 +1,22 @@
+<h1>Listing atividades</h1>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+    <th>Descricao</th>
+  </tr>
+
+<% @atividades.each do |atividade| %>
+  <tr>
+    <td><%=h atividade.titulo %></td>
+    <td><%=h atividade.descricao %></td>
+    <td><%= link_to 'Show', atividade %></td>
+    <td><%= link_to 'Edit', edit_atividade_path(atividade) %></td>
+    <td><%= link_to 'Destroy', atividade, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New atividade', new_atividade_path %>

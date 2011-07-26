@@ -1,0 +1,33 @@
+<p>
+  <b>Nome:</b>
+  <%=h @programa.nome %>
+</p>
+
+<p>
+  <b>Carga horaria:</b>
+  <%=h @programa.carga_horaria %>
+</p>
+
+<p>
+  <b>Periodicidade:</b>
+  <%=h @programa.periodicidade %>
+</p>
+
+<p>
+  <b>Ano implantacao:</b>
+  <%=h @programa.ano_implantacao %>
+</p>
+
+<p>
+  <b>Ementa:</b>
+  <%=h @programa.ementa %>
+</p>
+
+<p>
+  <b>Objetivos:</b>
+  <%=h @programa.objetivos %>
+</p>
+
+
+<%= link_to 'Edit', edit_programa_path(@programa) %> |
+<%= link_to 'Back', programas_path %>

@@ -1,0 +1,36 @@
+<h1>Editing programa</h1>
+
+<% form_for(@programa) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :carga_horaria %><br />
+    <%= f.text_field :carga_horaria %>
+  </p>
+  <p>
+    <%= f.label :periodicidade %><br />
+    <%= f.text_field :periodicidade %>
+  </p>
+  <p>
+    <%= f.label :ano_implantacao %><br />
+    <%= f.text_field :ano_implantacao %>
+  </p>
+  <p>
+    <%= f.label :ementa %><br />
+    <%= f.text_field :ementa %>
+  </p>
+  <p>
+    <%= f.label :objetivos %><br />
+    <%= f.text_area :objetivos %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @programa %> |
+<%= link_to 'Back', programas_path %>

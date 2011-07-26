@@ -1,0 +1,13 @@
+<p>
+  <b>Nome:</b>
+  <%=h @disciplina.nome %>
+</p>
+
+<p>
+  <b>Descricao:</b>
+  <%=h @disciplina.descricao %>
+</p>
+
+
+<%= link_to 'Edit', edit_disciplina_path(@disciplina) %> |
+<%= link_to 'Back', disciplinas_path %>

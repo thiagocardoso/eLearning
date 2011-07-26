@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nome: MyString
+  carga_horaria: 1
+  periodicidade: 1
+  ano_implantacao: 1
+  ementa: MyString
+  objetivos: MyText
+
+two:
+  nome: MyString
+  carga_horaria: 1
+  periodicidade: 1
+  ano_implantacao: 1
+  ementa: MyString
+  objetivos: MyText

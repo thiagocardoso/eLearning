@@ -1,0 +1,24 @@
+<h1>Editing questao</h1>
+
+<% form_for(@questao) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :descricao %><br />
+    <%= f.text_area :descricao %>
+  </p>
+  <p>
+    <%= f.label :corpo %><br />
+    <%= f.text_area :corpo %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @questao %> |
+<%= link_to 'Back', questaos_path %>

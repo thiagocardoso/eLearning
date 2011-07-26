@@ -1,0 +1,16 @@
+<h1>Editing perfil</h1>
+
+<% form_for(@perfil) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :descricao %><br />
+    <%= f.text_field :descricao %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @perfil %> |
+<%= link_to 'Back', perfils_path %>

@@ -1,4 +1,18 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :questaos
+
+  map.resources :avaliacaos
+
+  map.resources :atividades
+
+  map.resources :materials
+
+  map.resources :disciplinas
+
+  map.resources :programas
+
+  map.resources :perfils
+
   map.resources :usuarios
 
   # The priority is based upon order of creation: first created -> highest priority.

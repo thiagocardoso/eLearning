@@ -1,0 +1,18 @@
+<p>
+  <b>Titulo:</b>
+  <%=h @avaliacao.titulo %>
+</p>
+
+<p>
+  <b>Descricao:</b>
+  <%=h @avaliacao.descricao %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @avaliacao.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_avaliacao_path(@avaliacao) %> |
+<%= link_to 'Back', avaliacaos_path %>

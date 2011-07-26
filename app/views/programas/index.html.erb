@@ -1,0 +1,30 @@
+<h1>Listing programas</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Carga horaria</th>
+    <th>Periodicidade</th>
+    <th>Ano implantacao</th>
+    <th>Ementa</th>
+    <th>Objetivos</th>
+  </tr>
+
+<% @programas.each do |programa| %>
+  <tr>
+    <td><%=h programa.nome %></td>
+    <td><%=h programa.carga_horaria %></td>
+    <td><%=h programa.periodicidade %></td>
+    <td><%=h programa.ano_implantacao %></td>
+    <td><%=h programa.ementa %></td>
+    <td><%=h programa.objetivos %></td>
+    <td><%= link_to 'Show', programa %></td>
+    <td><%= link_to 'Edit', edit_programa_path(programa) %></td>
+    <td><%= link_to 'Destroy', programa, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New programa', new_programa_path %>
