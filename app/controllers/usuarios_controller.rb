@@ -1,4 +1,12 @@
 class UsuariosController < ApplicationController
+  
+  # GET /usuarios/login  
+  def login
+    respond_to do |format|
+      format.html
+    end      
+  end
+  
   # GET /usuarios
   # GET /usuarios.xml
   def index

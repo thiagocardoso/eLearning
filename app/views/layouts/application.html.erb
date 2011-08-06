@@ -9,17 +9,123 @@
 	</head>
 	<body>
 		<div id="corpo">
-			<div id="cabecalho" class="teste">
-				<a href="#">Inicio</a>
-				<a href="#">Disciplinas</a>
-				<a href="#">Avaliacoes</a>
+			<div id="cabecalho">
+				<ul class="sf-menu"> 
+					<li class="current"> 
+						<a href="#a">Início</a> 
+					</li>
+					<li> 
+						<a href="#">Área do Professor</a> 
+						<ul> 
+							<li> 
+								<a href="#">Programas</a> 
+							</li> 
+							<li> 
+								<a href="#">Relatórios</a> 
+								<ul> 
+									<li><a href="#">Alunos</a></li> 
+									<li><a href="#">Provas</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+								</ul> 
+							</li> 
+							<li> 
+								<a href="#">menu item</a> 
+								<ul> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+								</ul> 
+							</li> 
+							<li> 
+								<a href="#">menu item</a> 
+								<ul> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+								</ul> 
+							</li> 
+							<li> 
+								<a href="#">menu item</a> 
+								<ul> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+								</ul> 
+							</li> 
+						</ul> 
+					</li> 
+					<li> 
+						<a href="#">Área do Aluno</a> 
+						<ul> 
+							<li> 
+								<a href="#">Programas</a> 
+							</li> 
+							<li> 
+								<a href="#">Relatórios</a> 
+								<ul> 
+									<li><a href="#">Alunos</a></li> 
+									<li><a href="#">Provas</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+								</ul> 
+							</li> 
+							<li> 
+								<a href="#">menu item</a> 
+								<ul> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+								</ul> 
+							</li> 
+							<li> 
+								<a href="#">menu item</a> 
+								<ul> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+								</ul> 
+							</li> 
+							<li> 
+								<a href="#">menu item</a> 
+								<ul> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+									<li><a href="#">menu item</a></li> 
+								</ul> 
+							</li> 
+						</ul> 				
+					</li>	
+				</ul> 				
 			</div>
 			<br />
+			<div id="contexto">
 			<%= yield %>
+			</div>
 			<div id="rodape">
 				SEK Sistemas 2011 - Todos os direitos reservados
-				
 			</div>
 		</div>	
 	</body>
 </html>
+
+<script>
+		jQuery(function(){
+			jQuery('ul.sf-menu').superfish();
+		});
+ 
+</script>
