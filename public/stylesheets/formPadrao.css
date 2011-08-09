@@ -1,0 +1,60 @@
+/*
+   class formPadrao
+*/
+
+div.formPadrao {
+
+    border: 1px solid #ccc;
+    background: eee;
+    
+    margin: 5px;
+    padding: 10px;       
+
+}
+
+div.formPadrao h1 {
+    color: #444;
+    text-shadow: #aaa 4px 3px 5px;
+}
+
+div.formPadrao h2 {
+    color: #444;
+}
+
+div.formPadrao h3 {
+    color: #555;
+}
+
+div.formPadrao p {
+    padding: 0px;
+    margin: 10px;
+
+}
+
+div.formPadrao label {
+    clear:both;
+}
+
+div.formPadrao input {
+    clear:both;
+    font-size: 14px;
+    padding: 3px;
+    letter-spacing: 1px;
+}
+
+div.formPadrao .botoes {
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    
+    padding: 5px 15px;
+    font-size: 14px;
+    cursor: hand;
+    _cursor: pointer;
+    outline:none;
+    
+    background: #ededed;
+    color: black;
+    font: bold;
+}
