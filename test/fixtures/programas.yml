@@ -1,17 +1,17 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  nome: MyString
-  carga_horaria: 1
-  periodicidade: 1
-  ano_implantacao: 1
-  ementa: MyString
-  objetivos: MyText
+informatica2011_engenharia_de_software3:
+  nome: Engenharia de Software 3 - 2011
+  carga_horaria: 150
+  periodicidade: 3
+  ano_implantacao: 2002
+  ementa: Análise dos efeitos das mudanças culturais, científicas e tecnológicas na Educação e na Didática. Estudo da interdependência dos elementos constitutivos das situações de ensino e de aprendizagem. Estudo dos objetivos educacionais como norteadores da ação educativa.
+  objetivos: Proporcionar o aluno um ano divertidissimo com muito estudo e alegria
 
-two:
-  nome: MyString
-  carga_horaria: 1
-  periodicidade: 1
-  ano_implantacao: 1
-  ementa: MyString
-  objetivos: MyText
+informatica2012_engenharia_de_software3:
+  nome: Engenharia de Software 3 - 2012
+  carga_horaria: 200
+  periodicidade: 5
+  ano_implantacao: 2011
+  ementa: Ementa é uma descrição discursiva que resume o conteúdo conceitual ou conceitual / procedimental de uma disciplina.
+  objetivos: A origem e a formação da língua portuguesa. O latim clássico e o latim vulgar. A evolução fonológica, morfológica, sintática e semântica. A constituição do léxico. A expansão da língua portuguesa.

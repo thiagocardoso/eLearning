@@ -1,11 +1,14 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+marque_alternativa_simples:
+  nome: Marque a alternativa correta.
+  descricao: Quem descobriu o Basil?
+  corpo: O que deve ir aqui?
 
-one:
-  nome: MyString
-  descricao: MyText
-  corpo: MyText
+relacione_as_colunas_simples:
+  nome: Relacione as colunas
+  descricao: de acordo com o seu conhecimento sobre universo paralelo
+  corpo: O que deve ir aqui?
 
-two:
-  nome: MyString
-  descricao: MyText
-  corpo: MyText
+complete_as_lacunas_simples:
+  nome: Complete as lacunas
+  descricao: Complete os espacos em branco
+  corpo: O que deve ir aqui?

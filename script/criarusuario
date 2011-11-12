@@ -1,8 +1,0 @@
-#!/usr/bin/env ruby
-s
-usuario = Usuario.new
-usuario.nome = "kamis"
-usuario.senha = "kaka"
-usuario.login = "ks2"
-usuario.email = "kamis@terra.com.br"
-usuario.save

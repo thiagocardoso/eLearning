@@ -1,13 +1,23 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+usuario_aluno1:
+  nome: jao da cunha
+  login: joa
+  senha: 123mudar
+  email: joao@terra.com.br
 
-one:
-  nome: MyString
-  login: MyString
-  senha: MyString
-  email: MyString
+usuario_aluno2:
+  nome: Suzana raio laser
+  login: laser
+  senha: 123mudar
+  email: suza@terra.com.br
 
-two:
-  nome: MyString
-  login: MyString
-  senha: MyString
-  email: MyString
+usuario_professor1:
+  nome: Mario silva
+  login: mario
+  senha: 123mudar
+  email: mario@terra.com.br
+
+usuario_professor2:
+  nome: Pedro Vasca
+  login: vasca
+  senha: 123mudar
+  email: vasca@terra.com.br

@@ -1,9 +1,7 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+engenharia_de_software3_2011:
+  nome: Engenharia de software 3
+  descricao: Displina que visa conteúdos relacionados a qualidade de software, métricas e processos.
 
-one:
-  nome: MyString
-  descricao: MyString
-
-two:
-  nome: MyString
-  descricao: MyString
+informatica_e_sociedade_2011:
+  nome: Informática e sociedade
+  descricao: Displina que visa conteúdos relacionados a direitos das mulheres e afins.

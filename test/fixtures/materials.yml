@@ -1,9 +1,7 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+material_de_apoio_engenharia_de_software3_bim1:
+  titulo: O que é qualidade de software?
+  corpo: A qualidade de software é uma área de conhecimento da engenharia de software que objetiva garantir a qualidade do software através da definição e normatização de processos de desenvolvimento. Apesar dos modelos aplicados na garantia da qualidade de software atuarem principalmente no processo, o principal objetivo é garantir um produto final que satisfaça às expectativas do cliente, dentro daquilo que foi acordado inicialmente.
 
-one:
-  titulo: MyString
-  corpo: MyText
-
-two:
-  titulo: MyString
-  corpo: MyText
+material_de_apoio_engenharia_de_software3_bim2:
+  titulo: Processos de qualidade
+  corpo: A qualidade de software é uma área de conhecimento da engenharia de software que objetiva garantir a qualidade do software através da definição e normatização de processos de desenvolvimento. Apesar dos modelos aplicados na garantia da qualidade de software atuarem principalmente no processo, o principal objetivo é garantir um produto final que satisfaça às expectativas do cliente, dentro daquilo que foi acordado inicialmente.
