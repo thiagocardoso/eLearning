@@ -11,8 +11,8 @@
 		<div id="corpo">
 			<div id="cabecalho">
 				<ul class="sf-menu"> 
-					<li class="current"> 
-						<a href="#a">Início</a> 
+					<li class="current">
+                                             <%= link_to "Início", :controller => :home %>
 					</li>
 					<li> 
 						<a href="#">Área do Professor</a> 
@@ -61,7 +61,7 @@
 								</ul> 
 							</li> 
 						</ul> 
-					</li> 
+					</li>
 					<li> 
 						<a href="#">Área do Aluno</a> 
 						<ul> 
@@ -109,11 +109,22 @@
 								</ul> 
 							</li> 
 						</ul> 				
-					</li>	
+					</li>
 				</ul> 				
 			</div>
 			<br />
 			<div id="contexto">
+
+                        <% if flash[:error] %>
+                            <div class="ui-widget">
+                              <div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+                                <p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+                                <strong>Erro:</strong> <%= flash[:error] %></p>                                
+                              </div>
+                              <br/>
+                            </div>
+                        <% end %>
+
 			<%= yield %>
 			</div>
 			<div id="rodape">
@@ -124,8 +135,8 @@
 </html>
 
 <script>
-		jQuery(function(){
-			jQuery('ul.sf-menu').superfish();
-		});
- 
+    jQuery(function(){
+            jQuery('ul.sf-menu').superfish();
+    });
+    $( "input:submit, button, .ui-botao").button();
 </script>

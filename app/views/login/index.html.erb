@@ -1,17 +1,27 @@
 <div id="area_login">
-    <h1>Acesse o sistema:</h1>
+
+  <div class="ui-widget-header" style=" width: 300px; padding-left: 20px;">
+    <h1>Efetuar Login</h1>
+  </div>
     <% form_for  @login, :url => {:controller => :login, :action => :login}, :method => :post do |l| %>
-    <table>
-      <tr>
-        <td>Login</td>
-        <td><%= l.text_field :login %></td>
-      </tr>
-      <tr>
-        <td>Senha</td>
-        <td><%= l.password_field :senha %></td>
-      </tr>
-    </table>
-    <p><%= l.submit "Efetuar login" %></p>
+
+    <div id="painel" class="ui-widget-content" style=" width: 300px; padding-left: 20px;">
+        <br/>
+        <p>Login</p>
+        <p><%= l.text_field :login, :size => 27 %></p>
+
+        <br/>
+        <p>Senha</p>
+        <p><%= l.password_field :senha , :size => 27 %></p>
+        <br/>
+        <p>
+          <%= l.submit "Efetuar login", :id => "button" %>
+          <%=  link_to 'Cadastrar-se', {:controller => :usuarios, :action => :new}, :class => "ui-botao" %>
+        </p>
+        <br/>
+    </div>
+
+    
     <% end %>
-    <p><%= link_to 'Cadastrar-se', :controller => :usuarios, :action => :new %></p>
-</div>	
+    
+</div>

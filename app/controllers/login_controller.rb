@@ -13,6 +13,7 @@ class LoginController < ApplicationController
       redirect_to :controller => :questoes
     else
       session[:usuario] = nil
+      flash[:error] = "Usuário ou senha inválido"
       redirect_to :action => :index
     end
   end
