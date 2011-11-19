@@ -9,12 +9,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111111225305) do
+ActiveRecord::Schema.define(:version => 20111115183243) do
 
   create_table "atividades", :force => true do |t|
     t.string   "titulo"
     t.text     "descricao"
     t.integer  "programa_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "avaliacao_questaos", :force => true do |t|
+    t.integer  "avaliacao_id"
+    t.integer  "questao_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -28,9 +35,28 @@ ActiveRecord::Schema.define(:version => 20111111225305) do
     t.datetime "updated_at"
   end
 
+  create_table "avaliacaos_questaos", :id => false, :force => true do |t|
+    t.integer "avaliacao_id"
+    t.integer "questao_id"
+  end
+
   create_table "disciplinas", :force => true do |t|
     t.string   "nome"
     t.string   "descricao"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "material_atividades", :force => true do |t|
+    t.integer  "material_id"
+    t.integer  "atividade_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "material_disciplinas", :force => true do |t|
+    t.integer  "material_id"
+    t.integer  "disciplina_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -49,8 +75,20 @@ ActiveRecord::Schema.define(:version => 20111111225305) do
     t.datetime "updated_at"
   end
 
+  create_table "perfil_permissaos", :force => true do |t|
+    t.integer  "perfil_id"
+    t.integer  "permissao_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "perfils", :force => true do |t|
     t.string   "descricao"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "permissaos", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -79,6 +117,28 @@ ActiveRecord::Schema.define(:version => 20111111225305) do
     t.string   "nome"
     t.text     "descricao"
     t.text     "corpo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "usuario_avaliacao_questaos", :force => true do |t|
+    t.integer  "usuario_id"
+    t.integer  "avaliacao_id"
+    t.integer  "questao_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "usuario_avaliacaos", :force => true do |t|
+    t.integer  "usuario_id"
+    t.integer  "avaliacao_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "usuario_programas", :force => true do |t|
+    t.integer  "usuario_id"
+    t.integer  "programa_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
