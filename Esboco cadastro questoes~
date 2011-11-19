@@ -1,0 +1,62 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<h2>Cadastro de questões</h2>
+<body>
+
+<div id="cabecalho" align="left">	
+<font size="4" face="Arial">Titulo da questao</font><br>
+	<textarea name="titulo" cols="50" rows="2"></textarea><br>
+	
+	<font size="4" face="Arial">Descricao/Corpo</font><br>
+	<textarea name="descricao" cols="50" rows="5"></textarea><br><br>
+</div>
+
+<div id="objetiva" align="left">		
+<table border="1">
+<tr>
+<th>Alternativas</th>
+<th>Correto</th>
+<th>Remover</th>
+</tr>
+<tr>
+<td>sadgasdgasgasgas</td>
+<td>X</td>
+<td align="center"><button>X</button></td>
+</tr>
+</table>
+<br>
+
+<font style="helvetica" > Adicionar Alternativa</font><br>
+<input type="text" name="Adiconar_Alternativa" value=""/> <button>+</button>
+</div>
+<br>
+<br>
+
+<div id="relacionar_colunas">
+<table border="1" >
+<tr>
+<th>Relacionar Colunas</th>
+<th>Remover</th>
+</tr>
+<td bgcolor="blue">A- Alternativa principal</td>
+<td align="center"><button>X</button></td>
+<tr>
+<td bgcolor="green">1- Alternativa relacionada</td>
+<td align="center"><button>X</button></td>
+</tr>
+</table>
+<br>
+
+<font face="Arial">Adicionar Alternativa</font><br>
+<input type="text" name="alternativa_principal" size="50"><br><br>
+
+<font face="Arial">Adicionar Alternativa Relacionada</font><br>
+<input type="text" name="alternativa_relacionada" size="50"><br>
+
+<button>Adicionar</button>
+</div>	
+</body>
+
+</html>
