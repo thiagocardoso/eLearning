@@ -1,14 +1,17 @@
 <div id="area_login">
-	<h1>Acesse o sistema:</h1>
-	<table>
-		<tr>
-			<td>Login</td>
-			<td><input type="text" id="login_input" /></td>
-		</tr>
-		<tr>
-			<td>Senha</td>
-			<td><input type="password" id="senha_input" /></td>
-		</tr>		
-	</table>
-	<p><%= link_to 'Cadastrar-se', :controller => :usuarios, :action => :new %></p>	
+    <h1>Acesse o sistema:</h1>
+    <% form_for  @login, :url => {:controller => :login, :action => :login}, :method => :post do |l| %>
+    <table>
+      <tr>
+        <td>Login</td>
+        <td><%= l.text_field :login %></td>
+      </tr>
+      <tr>
+        <td>Senha</td>
+        <td><%= l.password_field :senha %></td>
+      </tr>
+    </table>
+    <p><%= l.submit "Efetuar login" %></p>
+    <% end %>
+    <p><%= link_to 'Cadastrar-se', :controller => :usuarios, :action => :new %></p>
 </div>	

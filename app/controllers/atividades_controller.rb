@@ -1,6 +1,7 @@
 class AtividadesController < ApplicationController
   # GET /atividades
   # GET /atividades.xml
+  
   def index
     @atividades = Atividade.all
 
