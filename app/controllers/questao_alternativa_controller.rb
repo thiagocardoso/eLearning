@@ -1,8 +1,9 @@
 class QuestaoAlternativaController < ApplicationController
   def add
-    @alternativa = QuestaoAlternativa.new(params[:alternativa])
-
+    @alternativa = QuestaoAlternativas.new(params[:alternativa])
     @alternativa.save
+
+    render :nothing => true
   end
 
   def remove

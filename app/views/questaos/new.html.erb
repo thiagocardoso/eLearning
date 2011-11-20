@@ -18,15 +18,22 @@
         <%= f.radio_button :tipo, "2", :id => "radio_lac" %>Complete as lacunas<br />
       </div>
       <br />
+      <%= f.submit "Cadastrar", :class => "ui-botao" %>
+      <%=  link_to 'Voltar', {:controller => :questao, :action => :index}, :class => "ui-botao" %>
+      <br />
+      <br />
+    </div>
+  <% end %>
 
-      <div id="div_obj">
-        <%= render :partial => "questao_objetiva", :locals => { :alternativas => @alternativas }  %>
-
-        <p> Adicionar Alternativa</p>
-        <br />
-        <input type="text" name="Adicionar_Alternativa" value=""/> <%= link_to_remote "+", :url => { :action => "destroy", :id => post.id },
-    :update => %>
-      </div>
+    <div id="div_obj">
+      <%= render :partial => "questao_objetiva", :locals => { :alternativas => @alternativas }  %>
+      <p> Adicionar Alternativa</p>
+      <br />
+      <% form_remote_tag :url => {:controller => :questao_alternativa, :action => :add} do %>
+        <div> <%= submit_tag 'Save' %></div>
+      <% end %>
+      <button id="nova_alternativa">alternativa nova</button>
+    </div>
 
       <div id="div_rel">
         Relacione
@@ -35,14 +42,6 @@
       <div id="div_lac">
         Lacunas
       </div>
-
-
-      <%= f.submit "Cadastrar", :class => "ui-botao" %>
-      <%=  link_to 'Voltar', {:controller => :questao, :action => :index}, :class => "ui-botao" %>
-      <br />
-      <br />
-    </div>
-  <% end %>
 </div>
 
 <script>
@@ -67,5 +66,16 @@
         $("#div_obj").hide();
         $("#div_lac").fadeIn("slow");
     });
+
+    $("#nova_alternativa").click(
+      function () {
+          $.post("<%= url_for(:controller => :questao_alternativa, :action => :add) %>",
+          {questao_id: "2", descricao: "sdff"},
+          function(data) {           
+            
+          });
+      }
+
+    );
 
 </script>

@@ -1,11 +1,3 @@
-<div id="cabecalho" align="left">
-<font size="4" face="Arial">Titulo da questao</font><br>
-	<textarea name="titulo" cols="50" rows="2"></textarea><br>
-	
-	<font size="4" face="Arial">Descricao/Corpo</font><br>
-	<textarea name="descricao" cols="50" rows="5"></textarea><br><br>
-</div>
-
 <div id="objetiva" align="left">		
 <table border="1">
 <tr>
