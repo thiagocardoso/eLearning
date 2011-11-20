@@ -1,10 +1,10 @@
 class CreateQuestaos < ActiveRecord::Migration
   def self.up
     create_table :questaos do |t|
-      t.string :nome
+      t.string :titulo
       t.text :descricao
-      t.text :corpo
-
+      t.integer :tipo
+      t.references :questao_alternativa
       t.timestamps
     end
   end

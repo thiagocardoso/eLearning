@@ -1,14 +1,15 @@
 marque_alternativa_simples:
-  nome: Marque a alternativa correta.
+  titulo: Marque a alternativa correta.
   descricao: Quem descobriu o Basil?
-  corpo: O que deve ir aqui?
+  tipo: 1
+  
 
 relacione_as_colunas_simples:
-  nome: Relacione as colunas
+  titulo: Relacione as colunas
   descricao: de acordo com o seu conhecimento sobre universo paralelo
-  corpo: O que deve ir aqui?
+  tipo: 2
 
 complete_as_lacunas_simples:
-  nome: Complete as lacunas
+  titulo: Complete as lacunas
   descricao: Complete os espacos em branco
-  corpo: O que deve ir aqui?
+  tipo: 0

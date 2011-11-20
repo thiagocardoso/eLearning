@@ -109,9 +109,10 @@ ActiveRecord::Schema.define(:version => 20111115183243) do
   end
 
   create_table "questaos", :force => true do |t|
-    t.string   "nome"
+    t.string   "titulo"
     t.text     "descricao"
-    t.text     "corpo"
+    t.integer  "tipo"
+    t.integer  "questao_alternativa_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,23 +1,71 @@
-<h1>New questao</h1>
+<div style="width: 450px">
+  <div class="ui-widget-header" style="padding-left: 10px;">
+    <h1>Nova questão</h1>
+  </div>
 
-<% form_for(@questao) do |f| %>
-  <%= f.error_messages %>
+  <% form_for(@questao) do |f| %>
+    <div class="ui-widget-content" style="padding-left: 10px;">
+      <p>Titulo da questão</p>
+      <p><%= f.text_field :titulo, :size => 65 %></p>
+      <br />
+      <p>Descri&ccedil;ão</p>
+      <p><%= f.text_area :descricao, :cols => 50, :rows => 5, :style => "overflow-y: scroll" %></p>
+      <br />
+      <div style="background-color: #e5e9f4; padding: 10px; margin-right: 10px;">
+        <p>Tipo da questão</p>
+        <%= f.radio_button :tipo, "0", :id => "radio_obj" %>Objetiva<br/>
+        <%= f.radio_button :tipo, "1", :id => "radio_rel" %>Relacione as colunas<br />
+        <%= f.radio_button :tipo, "2", :id => "radio_lac" %>Complete as lacunas<br />
+      </div>
+      <br />
 
-  <p>
-    <%= f.label :nome %><br />
-    <%= f.text_field :nome %>
-  </p>
-  <p>
-    <%= f.label :descricao %><br />
-    <%= f.text_area :descricao %>
-  </p>
-  <p>
-    <%= f.label :corpo %><br />
-    <%= f.text_area :corpo %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
+      <div id="div_obj">
+        <%= render :partial => "questao_objetiva", :locals => { :alternativas => @alternativas }  %>
 
-<%= link_to 'Back', questaos_path %>
+        <p> Adicionar Alternativa</p>
+        <br />
+        <input type="text" name="Adicionar_Alternativa" value=""/> <%= link_to_remote "+", :url => { :action => "destroy", :id => post.id },
+    :update => %>
+      </div>
+
+      <div id="div_rel">
+        Relacione
+      </div>
+
+      <div id="div_lac">
+        Lacunas
+      </div>
+
+
+      <%= f.submit "Cadastrar", :class => "ui-botao" %>
+      <%=  link_to 'Voltar', {:controller => :questao, :action => :index}, :class => "ui-botao" %>
+      <br />
+      <br />
+    </div>
+  <% end %>
+</div>
+
+<script>
+    $("#div_obj").hide();
+    $("#div_rel").hide();
+    $("#div_lac").hide();
+    
+    $("#radio_obj").click( function() { 
+        $("#div_rel").hide();
+        $("#div_lac").hide();
+        $("#div_obj").fadeIn("slow");
+    });
+
+    $("#radio_rel").click( function() {
+        $("#div_obj").hide();
+        $("#div_lac").hide();
+        $("#div_rel").fadeIn("slow");
+    });
+
+    $("#radio_lac").click( function() {
+        $("#div_rel").hide();
+        $("#div_obj").hide();
+        $("#div_lac").fadeIn("slow");
+    });
+
+</script>

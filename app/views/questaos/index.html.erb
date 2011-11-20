@@ -2,16 +2,16 @@
 
 <table>
   <tr>
-    <th>Nome</th>
+    <th>Titulo</th>
     <th>Descricao</th>
-    <th>Corpo</th>
+    <th>Tipo</th>
   </tr>
 
 <% @questaos.each do |questao| %>
   <tr>
-    <td><%=h questao.nome %></td>
+    <td><%=h questao.titulo %></td>
     <td><%=h questao.descricao %></td>
-    <td><%=h questao.corpo %></td>
+    <td><%=h questao.tipo %></td>
     <td><%= link_to 'Show', questao %></td>
     <td><%= link_to 'Edit', edit_questao_path(questao) %></td>
     <td><%= link_to 'Destroy', questao, :confirm => 'Are you sure?', :method => :delete %></td>

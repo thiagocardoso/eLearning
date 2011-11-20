@@ -25,6 +25,7 @@ class QuestaosController < ApplicationController
   # GET /questaos/new.xml
   def new
     @questao = Questao.new
+    @alternativas = QuestaoAlternativa.new
 
     respond_to do |format|
       format.html # new.html.erb

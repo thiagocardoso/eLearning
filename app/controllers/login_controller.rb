@@ -10,7 +10,7 @@ class LoginController < ApplicationController
     usuario = Usuario.new(params[:usuario])
     if usuario.login_valido?
       session[:usuario] = usuario
-      redirect_to :controller => :questoes
+      redirect_to :controller => :home
     else
       session[:usuario] = nil
       flash[:error] = "Usuário ou senha inválido"

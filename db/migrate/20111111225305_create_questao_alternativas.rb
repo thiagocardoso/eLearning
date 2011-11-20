@@ -1,6 +1,7 @@
 class CreateQuestaoAlternativas < ActiveRecord::Migration
   def self.up
     create_table :questao_alternativas do |t|
+      t.references :questao
       t.integer :sequencia
       t.string :descricao
       t.references :questao_alternativas
