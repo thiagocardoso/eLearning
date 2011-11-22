@@ -26,11 +26,15 @@
   <% end %>
 
     <div id="div_obj">
-      <%= render :partial => "questao_objetiva", :locals => { :alternativas => @alternativas }  %>
+      <div id="lista_obj">
+      	<%= render :partial => "questao_objetiva", :locals => { :alternativas => @alternativas }  %>
+      </div>
       <p> Adicionar Alternativa</p>
       <br />
-      <% form_remote_tag :url => {:controller => :questao_alternativa, :action => :add} do %>
-        <div> <%= submit_tag 'Save' %></div>
+      <% form_remote_for :alternativa,  :url => { :action => :addquestaoobjetiva },  :update => 'lista_obj' do |a| %>      	
+		<%= a.text_field "descricao" %>      
+      	<%= a.hidden_field "questao_id", :value => 10 %>
+        <%= a.submit 'Save' %>
       <% end %>
       <button id="nova_alternativa">alternativa nova</button>
     </div>

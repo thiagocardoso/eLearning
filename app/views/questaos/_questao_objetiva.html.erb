@@ -4,11 +4,15 @@
     <th>Correto</th>
     <th>Remover</th>
   </tr>
-  <tr>
-    <td>sadgasdgasgasgas</td>
-    <td>X</td>
-    <td align="center"><button>X</button></td>
-   </tr>
+  <% if @alternativas %>
+  	<% @alternativas.each do |a| %>
+  	<tr>
+    	<td><%= a.descricao %></td>
+    	<td>X</td>
+    	<td align="center"><button>X</button></td>
+   	</tr>
+  	<% end %>
+  <% end %>
 </table>
 
 <br />

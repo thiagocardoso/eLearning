@@ -101,6 +101,7 @@ ActiveRecord::Schema.define(:version => 20111115183243) do
   end
 
   create_table "questao_alternativas", :force => true do |t|
+    t.integer  "questao_id"
     t.integer  "sequencia"
     t.string   "descricao"
     t.integer  "questao_alternativas_id"

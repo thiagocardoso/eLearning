@@ -83,4 +83,13 @@ class QuestaosController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def addquestaoobjetiva
+    @alternativa = QuestaoAlternativas.new(params[:alternativa])
+    @alternativas = QuestaoAlternativas.find_by_questao_id(@alternativa.questao_id)    
+    
+    if @alternativa.save
+      render :partial => 'questao_objetiva', :locals => { :alternativas => @alternativas }
+    end
+  end
 end
