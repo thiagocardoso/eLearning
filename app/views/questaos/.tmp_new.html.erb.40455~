@@ -1,0 +1,85 @@
+<div style="width: 450px">
+  <div class="ui-widget-header" style="padding-left: 10px;">
+    <h1>Nova questão</h1>
+  </div>
+
+  <% form_for(@questao) do |f| %>
+    <div class="ui-widget-content" style="padding-left: 10px;">
+      <p>Titulo da questão</p>
+      <p><%= f.text_field :titulo, :size => 65 %></p>
+      <br />
+      <p>Descri&ccedil;ão</p>
+      <p><%= f.text_area :descricao, :cols => 50, :rows => 5, :style => "overflow-y: scroll" %></p>
+      <br />
+      <div style="background-color: #e5e9f4; padding: 10px; margin-right: 10px;">
+        <p>Tipo da questão</p>
+        <%= f.radio_button :tipo, "0", :id => "radio_obj" %>Objetiva<br/>
+        <%= f.radio_button :tipo, "1", :id => "radio_rel" %>Relacione as colunas<br />
+        <%= f.radio_button :tipo, "2", :id => "radio_lac" %>Complete as lacunas<br />
+      </div>
+      <br />
+      <%= f.submit "Cadastrar", :class => "ui-botao" %>
+      <%=  link_to 'Voltar', {:controller => :questao, :action => :index}, :class => "ui-botao" %>
+      <br />
+      <br />
+    </div>
+  <% end %>
+
+    <div id="div_obj">
+      <div id="lista_obj">
+      	<%= render :partial => "questao_objetiva", :locals => { :alternativas => @alternativas }  %>
+      </div>
+      <p> Adicionar Alternativa</p>
+      <br />
+      <% form_remote_for :alternativa,  :url => { :action => :addquestaoobjetiva },  :update => 'lista_obj' do |a| %>      	
+		<%= a.text_field "descricao" %>      
+      	<%= a.hidden_field "questao_id", :value => 10 %>
+        <%= a.submit 'Save' %>
+      <% end %>
+      <button id="nova_alternativa">alternativa nova</button>
+    </div>
+
+      <div id="div_rel">
+        Relacione
+      </div>
+
+      <div id="div_lac">
+        Lacunas
+      </div>
+</div>
+
+<script>
+    $("#div_obj").hide();
+    $("#div_rel").hide();
+    $("#div_lac").hide();
+    
+    $("#radio_obj").click( function() { 
+        $("#div_rel").hide();
+        $("#div_lac").hide();
+        $("#div_obj").fadeIn("slow");
+    });
+
+    $("#radio_rel").click( function() {
+        $("#div_obj").hide();
+        $("#div_lac").hide();
+        $("#div_rel").fadeIn("slow");
+    });
+
+    $("#radio_lac").click( function() {
+        $("#div_rel").hide();
+        $("#div_obj").hide();
+        $("#div_lac").fadeIn("slow");
+    });
+
+    $("#nova_alternativa").click(
+      function () {
+          $.post("<%= url_for(:controller => :questao_alternativa, :action => :add) %>",
+          {questao_id: "2", descricao: "sdff"},
+          function(data) {           
+            
+          });
+      }
+
+    );
+
+</script>

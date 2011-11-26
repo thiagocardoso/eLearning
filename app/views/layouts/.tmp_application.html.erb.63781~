@@ -128,7 +128,7 @@
 
       <%= yield %>
       </div>
-      <div id="rodape" style="float:left; z-index:-1;">
+      <div id="rodape">
               SEK Sistemas 2011 - Todos os direitos reservados
       </div>
     </div>

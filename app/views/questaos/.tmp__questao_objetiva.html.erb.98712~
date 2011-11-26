@@ -1,0 +1,18 @@
+<table border="1">
+  <tr>
+    <th>Alternativas</th>
+    <th>Correto</th>
+    <th>Remover</th>
+  </tr>
+  <% if @alternativas %>
+  	<% @alternativas.each do |a| %>
+  	<tr>
+    	<td><%= a.descricao %></td>
+    	<td>X</td>
+    	<td align="center"><button>X</button></td>
+   	</tr>
+  	<% end %>
+  <% end %>
+</table>
+
+<br />

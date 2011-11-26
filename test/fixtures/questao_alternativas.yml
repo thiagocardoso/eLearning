@@ -1,7 +1,23 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+quem_descobriu_o_brasil_errado_1:
+  sequencia: 0
+  descricao: Dom pedro primeiro
+  questao_id: marque_alternativa_simples
+  
+quem_descobriu_o_brasil_errado_2:
+  sequencia: 1
+  descricao: Dom pedro segundo
+  questao_id: marque_alternativa_simples
+  
+quem_descobriu_o_brasil_errado_3:
+  sequencia: 2
+  descricao: Colombo
+  questao_id: marque_alternativa_simples
 
-# one:
-#   column: value
-#
-# two:
-#   column: value
+quem_descobriu_o_brasil_certo:
+  sequencia: 3
+  descricao: Pedro Alvares Cabral
+  questao_id: marque_alternativa_simples  
+
+  
+  
+

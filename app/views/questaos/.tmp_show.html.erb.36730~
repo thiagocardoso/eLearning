@@ -1,6 +1,6 @@
 <p>
-  <b>Titulo:</b>
-  <%=h @questao.titulo %>
+  <b>Nome:</b>
+  <%=h @questao.nome %>
 </p>
 
 <p>
@@ -9,8 +9,8 @@
 </p>
 
 <p>
-  <b>Tipo:</b>
-  <%=h @questao.tipo %>
+  <b>Corpo:</b>
+  <%=h @questao.corpo %>
 </p>
 
 
