@@ -83,6 +83,10 @@ class QuestaosController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def avaliacoes
+    @avaliacoes = Avaliacoes.all
+  end
   
   def addquestaoobjetiva
     @alternativa = QuestaoAlternativas.new(params[:alternativa])
@@ -92,4 +96,5 @@ class QuestaosController < ApplicationController
       render :partial => 'questao_objetiva', :locals => { :alternativas => @alternativas }
     end
   end
+
 end

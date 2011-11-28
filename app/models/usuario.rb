@@ -12,7 +12,7 @@ class Usuario < ActiveRecord::Base
   end
 
   def carrega_usuario
-    Usuario.find(:login => self.login, :senha => self.senha)
+     Usuario.find_all_by_login_and_senha(self.login, self.senha).first
   end
 
 end

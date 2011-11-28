@@ -1,9 +1,9 @@
-prova_engenharia_de_software3_2011:
-  titulo: Prova 4
-  descricao: Prova do quarto bimestre - Peso 1
+prova3_engenharia_de_software3_2011:
+  titulo: Prova do terceiro bimestre
+  descricao: Prova sobre o conteúdo dos slides e capítulo 1, 2 e 3 do livo Engenharia de Software 4
   status: 1
 
-trabalho_engenharia_de_software3_2011:
-  titulo: Trabalho final
-  descricao: Trabalho pricipal
+prova4_engenharia_de_software3_2011:
+  titulo: Prova do quarto bimestre
+  descricao: Prova sobre o conteúdo dos slides e capítulo 4 e 5 do livo Engenharia de Software 4
   status: 1

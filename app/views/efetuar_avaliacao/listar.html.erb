@@ -1,0 +1,11 @@
+<div id="ui-widget">
+  <h4>Avalia&ccedil;&otilde;es</h4>
+  <ul>
+    <% unless @avaliacoes.blank?  %>
+      <% @avaliacoes.each do |a| %>
+        <li><%= link_to "#{a.titulo} - #{a.descricao}", :action => :index, :id => a.id %></li>
+      <% end %>
+    <% end %>
+  </ul>
+</div>
+

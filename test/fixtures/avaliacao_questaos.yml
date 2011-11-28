@@ -1,7 +1,34 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+avaliacao_p3_q1:
+  avaliacao_id: prova3_engenharia_de_software3_2011
+  questao_id: marque_alternativa_simples_p3_1
 
-# one:
-#   column: value
-#
-# two:
-#   column: value
+avaliacao_p3_q2:
+  avaliacao_id: prova3_engenharia_de_software3_2011
+  questao_id: marque_alternativa_simples_p3_2
+
+avaliacao_p3_q3:
+  avaliacao_id: prova3_engenharia_de_software3_2011
+  questao_id: marque_alternativa_simples_p3_3
+
+
+
+
+avaliacao_p4_q1:
+  avaliacao_id: prova3_engenharia_de_software3_2011
+  questao_id: marque_alternativa_simples_p4_1
+
+avaliacao_p4_q2:
+  avaliacao_id: prova3_engenharia_de_software3_2011
+  questao_id: marque_alternativa_simples_p4_2
+  
+avaliacao_p4_q3:
+  avaliacao_id: prova3_engenharia_de_software3_2011
+  questao_id: marque_alternativa_simples_p4_3
+
+avaliacao_p4_q4:
+  avaliacao_id: prova3_engenharia_de_software3_2011
+  questao_id: marque_alternativa_simples_p4_4
+
+avaliacao_p4_q5:
+  avaliacao_id: prova3_engenharia_de_software3_2011
+  questao_id: marque_alternativa_simples_p4_5

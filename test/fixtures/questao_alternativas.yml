@@ -1,7 +1,97 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+simples_p3_1_alt1:
+  questao_id: marque_alternativa_simples_p3_1
+  sequencia: 1
+  descricao: Dom Pedro Primeiro
+  questao_alternativas_id: nil
 
-# one:
-#   column: value
-#
-# two:
-#   column: value
+simples_p3_1_alt2:
+  questao_id: marque_alternativa_simples_p3_1
+  sequencia: 2
+  descricao: Dom Pedro Segundp
+  questao_alternativas_id: nil
+
+simples_p3_1_alt3:
+  questao_id: marque_alternativa_simples_p3_1
+  sequencia: 3
+  descricao: Dom Casmurro
+  questao_alternativas_id: nil
+
+simples_p3_1_alt4:
+  questao_id: marque_alternativa_simples_p3_1
+  sequencia: 1
+  descricao: Pedro Alvares Cabral
+  questao_alternativas_id: simples_p3_1_alt4
+
+simples_p3_1_alt5:
+  questao_id: marque_alternativa_simples_p3_1
+  sequencia: 1
+  descricao: Dom Pedro Primeiro
+  questao_alternativas_id: nil
+
+
+
+
+
+simples_p3_2_alt1:
+  questao_id: marque_alternativa_simples_p3_2
+  sequencia: 1
+  descricao: DER - Diagrama de Estados e Relacionamento
+  questao_alternativas_id: nil
+
+simples_p3_2_alt2:
+  questao_id: marque_alternativa_simples_p3_2
+  sequencia: 2
+  descricao: DER - Diagrama de Entidade e Relacionamentos
+  questao_alternativas_id: marque_alternativa_simples_p3_2
+
+simples_p3_2_alt3:
+  questao_id: marque_alternativa_simples_p3_2
+  sequencia: 3
+  descricao: Diagrama de classe
+  questao_alternativas_id: nil
+
+simples_p3_2_alt4:
+  questao_id: marque_alternativa_simples_p3_2
+  sequencia: 1
+  descricao: Diagrama de estado
+  questao_alternativas_id: nil
+
+simples_p3_2_alt5:
+  questao_id: marque_alternativa_simples_p3_2
+  sequencia: 1
+  descricao: Documento visão
+  questao_alternativas_id: nil
+
+
+
+
+  
+simples_p3_3_alt1:
+  questao_id: marque_alternativa_simples_p3_3
+  sequencia: 1
+  descricao: A qualidade do produto está ligada a qualidade do processo de desenvolvimento
+  questao_alternativas_id: nil
+
+simples_p3_3_alt2:
+  questao_id: marque_alternativa_simples_p3_3
+  sequencia: 2
+  descricao: A qualidade pode ser aplicada em todas etapas do desenvolvimento
+  questao_alternativas_id: nil
+
+simples_p3_3_alt3:
+  questao_id: marque_alternativa_simples_p3_3
+  sequencia: 3
+  descricao: Adicionar uma etapa no processo para garantir qualidade resolve todos os problemas
+  questao_alternativas_id: marque_alternativa_simples_p3_3
+
+simples_p3_3_alt4:
+  questao_id: marque_alternativa_simples_p3_3
+  sequencia: 1
+  descricao: Diagrama de estado
+  questao_alternativas_id: nil
+
+simples_p3_3_alt5:
+  questao_id: marque_alternativa_simples_p3_3
+  sequencia: 1
+  descricao: Documento visão
+  questao_alternativas_id: nil

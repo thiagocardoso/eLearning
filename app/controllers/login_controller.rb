@@ -9,7 +9,7 @@ class LoginController < ApplicationController
   def login
     usuario = Usuario.new(params[:usuario])
     if usuario.login_valido?
-      session[:usuario] = usuario
+      session[:usuario] = usuario.carrega_usuario
       redirect_to :controller => :home
     else
       session[:usuario] = nil

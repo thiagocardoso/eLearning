@@ -1,0 +1,20 @@
+<div class="ui-widget">
+
+  <div class="ui-widget-header" style="padding: 10px">
+    <h3>Avalia&ccedil;&atilde;o</h3>
+    <h4><%= @avaliacao.titulo %></h4>
+    <p><%= @avaliacao.descricao %></p>
+  </div>
+
+  <div class="ui-widget-content" style="padding: 10px">
+    <% if @questoes.blank?  %>
+    Não há questões para essa avalia&ccedil;ão.
+    <% else %>
+      <% form_tag :method= > :post, :url => (:action => responder) %>
+        <% @questoes.each do |q| %>
+          <%=  monta_questao_html q.questao %>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
+</div>

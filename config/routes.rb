@@ -2,9 +2,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :perfils, :as => 'perfis'
 
-  map.resources :questaos, :as => 'questoes' 
-  #map.resources 'questoes/', :controller => :questaos
-
+  map.resources :questaos, :as => 'questoes'
+  
   map.resources :avaliacaos, :as => 'avaliacoes'
 
   map.resources :atividades

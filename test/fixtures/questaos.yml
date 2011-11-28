@@ -1,8 +1,37 @@
-marque_alternativa_simples:
-  titulo: Marque a alternativa correta.
+marque_alternativa_simples_p3_1:
+  titulo: Seguranca de software
   descricao: Quem descobriu o Basil?
   tipo: 1
-  
+
+marque_alternativa_simples_p3_2:
+  titulo: Processos de desenvolvimento
+  descricao: Qual o artefato que representa as entidades do sistema
+  tipo: 1
+
+marque_alternativa_simples_p3_3:
+  titulo: Garantia de qualidade
+  descricao: Marque a alternativa INCORRETA sobre a garantia da qualidade
+  tipo: 1
+
+marque_alternativa_simples_p4_1:
+  titulo: Qualidade de software.
+  descricao: Quem descobriu o Basil?
+  tipo: 1
+
+marque_alternativa_simples_p4_2:
+  titulo: Qualidade de software
+  descricao: Quem descobriu o Basil?
+  tipo: 1
+
+marque_alternativa_simples_p4_3:
+  titulo: Qualidade de software
+  descricao: Quem descobriu o Basil?
+  tipo: 1
+
+marque_alternativa_simples_p4_4:
+  titulo: Qualidade de software
+  descricao: Quem descobriu o Basil?
+  tipo: 1
 
 relacione_as_colunas_simples:
   titulo: Relacione as colunas

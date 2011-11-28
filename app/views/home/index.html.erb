@@ -1,16 +1,25 @@
 <div id="telaInicial">
-	<h1>e-Learning</h1>
-	
-	<div id="lado_esquerdo">
-		
-	</div>
-	
-	
-	<div id="lado_direito">
-		<ul>
-			<li>Rotinas do usuario</li>		
-		</ul>
-	</div>	
+
+  <h1>e-Learning</h1>
+  <div>   
+    <p>
+      <strong>Bem vindo <%=  session[:usuario].nome %></strong>
+      clique aqui para <%= link_to "sair", :controller => :login, :action => :logout %>
+    </p>
+  </div>
+
+  <div id="lado_esquerdo">
+
+  </div>
+
+
+  <div id="lado_direito">
+    <ul>
+      <li>Rotinas do usuario</li>
+      <li>Cadastrar questões</li>
+      <li><%= link_to "Fazer avalia&ccedil;&atilde;o", :controller => :efetuar_avaliacao, :action => :listar %></li>
+    </ul>
+  </div>
 		
 </div>
 
