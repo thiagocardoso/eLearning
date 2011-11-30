@@ -117,9 +117,6 @@ class QuestaosController < ApplicationController
       render :partial => 'questao_objetiva', :locals => { :alternativas => @alternativas }
     end
   end
-<<<<<<< HEAD
-
-=======
   
   def destroyquestaoobjetiva
     @alternativa = QuestaoAlternativas.find(params[:id])
@@ -170,5 +167,5 @@ class QuestaosController < ApplicationController
       
     render :partial => 'questao_colunas', :locals => { :colunas => @colunas }    
   end   
->>>>>>> 1ff7127c58a517911d148b37f9274c0905f74e34
+
 end
