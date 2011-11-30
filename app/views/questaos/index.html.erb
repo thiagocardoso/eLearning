@@ -13,7 +13,7 @@
     <td><%=h questao.descricao %></td>
     <td><%=h questao.tipo %></td>
     <td><%= link_to 'Show', questao %></td>
-    <td><%= link_to 'Edit', edit_questao_path(questao) %></td>
+    <td><%= link_to 'Edit', :action => :new, :id => questao.id %></td>
     <td><%= link_to 'Destroy', questao, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>

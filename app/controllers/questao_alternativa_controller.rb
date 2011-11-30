@@ -7,7 +7,7 @@ class QuestaoAlternativaController < ApplicationController
   end
 
   def remove
-    @alternativa.find(params[:alternativa])
-    @alternativa.delete
+    @alternativa.find(params[:id])
+    @alternativa.destroy
   end
 end

@@ -31,14 +31,15 @@ marque_alternativa_simples_p4_3:
 marque_alternativa_simples_p4_4:
   titulo: Qualidade de software
   descricao: Quem descobriu o Basil?
-  tipo: 1
+  tipo: 0
+ 
 
 relacione_as_colunas_simples:
   titulo: Relacione as colunas
   descricao: de acordo com o seu conhecimento sobre universo paralelo
-  tipo: 2
+  tipo: 1
 
 complete_as_lacunas_simples:
   titulo: Complete as lacunas
   descricao: Complete os espacos em branco
-  tipo: 0
+  tipo: 2

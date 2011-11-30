@@ -1,0 +1,22 @@
+<table border=1>
+	<tr>
+	<th>Sequencia</th>
+	<th>Descrição</th>
+	<th>Remover</th>
+	</tr>
+	<% if @colunas %>
+	<% @colunas.each do |coluna|%>
+		<tr style="background-color:#EE5757;"> 
+			<td><%= coluna.sequencia %> </td>
+			<td> <%= coluna.descricao %></td>
+			<td><%= link_to_remote 'X', :url => { :action => "destroyquestaocoluna", :id => coluna.id}, :update => "lista_col", :confirm => 'Deseja remover esta alternativa?'  %></td>
+		</tr>
+		<% @relacionada = QuestaoAlternativas.find(coluna.questao_alternativas_id) %>
+		<tr style="background-color:#8AE234;"> 
+			<td><%= @relacionada.sequencia %> </td>
+			<td> <%= @relacionada.descricao %></td>
+			<td></td>
+		</tr>
+	<%end%>
+	<%end%>
+</table>	
